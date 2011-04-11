@@ -497,7 +497,7 @@ int extension_callback(libwebsocket_context * context,
  */
 
 struct libwebsocket_protocols {
-  char *name;
+  const char* name;
   int function(libwebsocket_context * context,
       libwebsocket *wsi,
       libwebsocket_callback_reasons reason, void *user,
