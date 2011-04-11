@@ -7,5 +7,5 @@ task :default => [:build]
 
 desc "Build the program"
 task :build do
-  sh "/opt/d2/usr/local/bin/gdc -o test-server main.d -I lib/ -L/usr/local/lib"
+  sh "/opt/d2/usr/local/bin/gdc -o test-server main.d -I lib/ -L/usr/local/lib -lwebsockets"
 end
